@@ -44,4 +44,13 @@ public class Playlist {
         int songIndex = playlist.indexOf(song);
         playlist.remove(songIndex);
       }
+
+      public String examineSongs(){
+        String description = "";
+        for(int i = 0; i < playlist.size(); i++){
+          description += playlist.get(i).toString();
+          description += "\n";
+        }
+        return description;
+      }
 }
