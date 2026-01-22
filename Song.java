@@ -29,9 +29,6 @@ public class Song {
 
 
 
-
-
-
      /**
       * Methods-- what will you want each Song to do?
       * Consider all the getter methods (getName, getArtist, etc.)
@@ -39,6 +36,31 @@ public class Song {
       * song easily as well!
       * What kind of mutator (setter) methods will you need?
       */
+
+     public String getName(){
+        return "\""+ title + "\"";
+     }
+
+     public String getArtist(){
+        return artist;
+     }
+
+     public boolean isLiked(){
+        return like;
+     }
+
+     public String time(){
+        return minutes+ ":" + seconds;
+     }
+
+     public String toString(){
+        return "\""+ title + "\"" + " by " + artist + " " + "(" + minutes+ ":" + seconds + ")";
+
+     }
+
+
+
+
 
 
 }
