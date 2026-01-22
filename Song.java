@@ -1,7 +1,7 @@
 /**
  * File for a Song class to be used in the Playlist Project
- * @author
- * @version
+ * @MiraMavis
+ * @1/22/26
  */
 public class Song {
     //Fields-- what information do we want each Song to store?
@@ -59,7 +59,22 @@ public class Song {
      }
 
 
+     public void setTitle(String newTitle){
+        title = newTitle;
+     }
 
+     public void setArtist(String newArtist){
+      artist = newArtist;
+     }
+
+     public void setTime(int newMinutes, int newSeconds){
+      minutes = newMinutes;
+      seconds = newSeconds;
+     }
+
+     public void setLiked(boolean isLiked){
+      like = isLiked;
+     }
 
 
 
