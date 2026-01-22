@@ -5,7 +5,11 @@
  */
 public class Song {
     //Fields-- what information do we want each Song to store?
-
+    private boolean like;
+    private String title;
+    private String artist;
+    private int minutes;
+    private int seconds;
 
 
 
@@ -13,6 +17,7 @@ public class Song {
      * Constructor-- what information needs to be given to make a Song?
      * How will you handle 'liked' songs? It makes sense for a Song not be 'liked' by default
      */
+    
 
 
 
