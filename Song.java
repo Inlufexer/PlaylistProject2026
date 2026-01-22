@@ -5,7 +5,11 @@
  */
 public class Song {
     //Fields-- what information do we want each Song to store?
-
+    private boolean like;
+    private String title;
+    private String artist;
+    private int minutes;
+    private int seconds;
 
 
 
@@ -14,7 +18,14 @@ public class Song {
      * How will you handle 'liked' songs? It makes sense for a Song not be 'liked' by default
      */
 
+    public Song (String newTitle, String newArtist, int newMinute, int newSecond){
+        like = false;
+        title = newTitle;
+        artist = newArtist;
+        minutes = newMinute;
+        seconds = newSecond;
 
+    }
 
 
 
@@ -25,6 +36,31 @@ public class Song {
       * song easily as well!
       * What kind of mutator (setter) methods will you need?
       */
+
+     public String getName(){
+        return "\""+ title + "\"";
+     }
+
+     public String getArtist(){
+        return artist;
+     }
+
+     public boolean isLiked(){
+        return like;
+     }
+
+     public String time(){
+        return minutes+ ":" + seconds;
+     }
+
+     public String toString(){
+        return "\""+ title + "\"" + " by " + artist + " " + "(" + minutes+ ":" + seconds + ")";
+
+     }
+
+
+
+
 
 
 }
