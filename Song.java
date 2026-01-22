@@ -36,6 +36,9 @@ public class Song {
       * song easily as well!
       * What kind of mutator (setter) methods will you need?
       */
+     public void like(){
+      like = true;
+     }
 
      public String getName(){
         return "\""+ title + "\"";
