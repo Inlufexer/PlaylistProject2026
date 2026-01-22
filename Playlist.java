@@ -34,6 +34,10 @@ public class Playlist {
        * Removing all unliked songs from the playlist (careful with this one!)
        */
 
+      public void addSong(Song song){
+        playlist.add(song);
+      }
+
       public void like(Song song){
         int songIndex = playlist.indexOf(song);
         song.like();
