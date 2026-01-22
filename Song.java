@@ -54,8 +54,12 @@ public class Song {
      }
 
      public String toString(){
+      if (like == false){
         return "\""+ title + "\"" + " by " + artist + " " + "(" + minutes+ ":" + seconds + ")";
-
+      }
+      else{
+         return "\""+ title + "\"" + " by " + artist + " " + "(" + minutes+ ":" + seconds + ") -- liked";
+      }
      }
 
 
