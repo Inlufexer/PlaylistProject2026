@@ -33,4 +33,10 @@ public class Playlist {
        * Determining the total duration of all songs
        * Removing all unliked songs from the playlist (careful with this one!)
        */
+
+      public void like(Song song){
+        int songIndex = playlist.indexOf(song);
+        song.like();
+        playlist.set(songIndex, song);
+      }
 }
