@@ -39,4 +39,9 @@ public class Playlist {
         song.like();
         playlist.set(songIndex, song);
       }
+
+      public void remove(Song song){
+        int songIndex = playlist.indexOf(song);
+        playlist.remove(songIndex);
+      }
 }
