@@ -53,4 +53,15 @@ public class Playlist {
         }
         return description;
       }
+
+      public String examineLiked(){
+        String description = "";
+        for(int i = 0; i < playlist.size(); i++){
+          if(playlist.get(i).isLiked()){
+            description += playlist.get(i).toString();
+            description += "\n";
+          }
+        }
+        return description;
+      }
 }
