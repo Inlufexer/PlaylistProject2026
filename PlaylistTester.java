@@ -7,8 +7,8 @@
  * Note that there's no need for a Scanner in this project-- all of the playlist
  * can be 'hardcoded' into main.
  * 
- * @author
- * @version
+ * @author Mira Mavis, Theodor Faraon, Anthony Iek
+ * @version 1/23/26
  */
 public class PlaylistTester {
     public static void main(String[] args) {

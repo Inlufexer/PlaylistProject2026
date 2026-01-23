@@ -3,6 +3,8 @@ import java.util.ArrayList;
 /**
  * The Playlist class, which will keep track of a playlist of Song objects
  * Refer to the project description to make sure you have access to all available methods
+ * @author Mira Mavis, Theodor Faraon, Anthony Iek
+ * @version 1/23/26
  */
 public class Playlist {
     /**
