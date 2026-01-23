@@ -38,10 +38,8 @@ public class Playlist {
         playlist.add(song);
       }
 
-      public void like(Song song){
-        int songIndex = playlist.indexOf(song);
-        song.like();
-        playlist.set(songIndex, song);
+      public void like(int num){
+        playlist.get(num).like();
       }
 
       public void remove(Song song){
