@@ -82,6 +82,10 @@ public class Playlist {
       }
 
       public void removeUnliked(){
-
+        for(int i = playlist.size() - 1; i > -1; i--){
+          if(!playlist.get(i).isLiked()){
+            playlist.remove(i);
+          }
+        }
       }
 }
