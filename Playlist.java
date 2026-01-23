@@ -42,9 +42,8 @@ public class Playlist {
         playlist.get(num).like();
       }
 
-      public void remove(Song song){
-        int songIndex = playlist.indexOf(song);
-        playlist.remove(songIndex);
+      public void remove(int num){
+        playlist.remove(num);
       }
 
       public String examineSongs(){
