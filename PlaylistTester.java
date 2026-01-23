@@ -18,6 +18,7 @@ public class PlaylistTester {
          * is something like...
          * p.addSong(new Song(..., ..., ...))
          */
+playlist.addSong(new Song("Penguin", "Penguino", 3, 14));
 
 
 
