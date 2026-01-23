@@ -53,6 +53,14 @@ public class Song {
         return minutes+ ":" + seconds;
      }
 
+     public int getMinutes(){
+      return minutes;
+     }
+
+     public int getSeconds(){
+      return seconds;
+     }
+
      public String toString(){
       if (like == false){
         return "\""+ title + "\"" + " by " + artist + " " + "(" + minutes+ ":" + seconds + ")";
