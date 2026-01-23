@@ -32,18 +32,17 @@ public class PlaylistTester {
         // Print out all the songs in the playlist to verify it's working correctly
         System.out.println(playlist.examineSongs());
 
-        System.out.println("\nLiking the songs in position X, Y, Z, etc....\n");
-        System.out.println("Liking Prelude in B Minor");
+        System.out.println("\nLiking the song in position 3 (Prelude in B Minor) \n");
         // Once your songs are 'liked', this should be reflected in the next printout
         playlist.like(3);
 
-        System.out.println("Printing the songs...\n");
+        System.out.println("\nPrinting the songs...\n");
         System.out.println(playlist.examineSongs());
 
         System.out.println("\nRemoving the song in position 1 (Happy Birthday) \n");
         playlist.remove(1);
 
-        System.out.println("Printing the songs...\n");
+        System.out.println("\nPrinting the songs...\n");
         System.out.println(playlist.examineSongs());
 
         System.out.println("\nPrinting only the liked songs...\n");
@@ -58,7 +57,7 @@ public class PlaylistTester {
         // This should be doable with a single method call
         playlist.removeUnliked();
 
-        System.out.println("Printing all songs...\n");
+        System.out.println("\nPrinting all songs...\n");
         // This should now look like only the liked songs list from before
         System.out.println(playlist.examineSongs());
 
