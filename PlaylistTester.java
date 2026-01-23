@@ -10,6 +10,7 @@ public class PlaylistTester {
     public static void main(String[] args) {
         System.out.println("Initializing a Playlist...\n");
         //Make your playlist here
+        Playlist playlist = new Playlist();
 
         System.out.println("Adding songs to the Playlist...\n");
         /**
