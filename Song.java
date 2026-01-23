@@ -56,12 +56,28 @@ public class Song {
         return minutes+ ":" + seconds;
      }
 
+     public int getMinutes(){
+      return minutes;
+     }
+
+     public int getSeconds(){
+      return seconds;
+     }
+
      public String toString(){
-      if (like == false){
-        return "\""+ title + "\"" + " by " + artist + " " + "(" + minutes+ ":" + seconds + ")";
+      String secondsStr = "";
+      if(seconds / 10 == 0){
+         secondsStr = "0" + seconds;
       }
       else{
-         return "\""+ title + "\"" + " by " + artist + " " + "(" + minutes+ ":" + seconds + ") -- liked";
+         secondsStr += seconds;
+      }
+
+      if (like == false){
+        return "\""+ title + "\"" + " by " + artist + " " + "(" + minutes+ ":" + secondsStr + ")";
+      }
+      else{
+         return "\""+ title + "\"" + " by " + artist + " " + "(" + minutes+ ":" + secondsStr + ") -- liked";
       }
      }
 
