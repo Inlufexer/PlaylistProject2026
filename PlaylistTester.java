@@ -40,10 +40,12 @@ public class PlaylistTester {
         System.out.println("Printing the songs...\n");
         System.out.println(playlist.examineSongs());
 
-        System.out.println("\nRemoving the song in position A, B, C, etc...\n");
+        System.out.println("\nRemoving the song in position 1 (Happy Birthday) \n");
+        playlist.remove(1);
     
 
         System.out.println("Printing the songs...\n");
+        System.out.println(playlist.examineSongs());
 
 
         System.out.println("\nPrinting only the liked songs...\n");
