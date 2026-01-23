@@ -68,4 +68,20 @@ public class Playlist {
         }
         return description;
       }
+
+      public String totalDuration(){
+        int totalMinutes = 0;
+        int totalSeconds = 0;
+        for(int i = 0; i < playlist.size(); i++){
+          totalMinutes += playlist.get(i).getMinutes();
+          totalSeconds += playlist.get(i).getSeconds();
+        }
+        totalMinutes += totalSeconds / 60;
+        totalSeconds = totalSeconds % 60;
+        return totalMinutes + ":" + totalSeconds;
+      }
+
+      public void removeUnliked(){
+
+      }
 }
